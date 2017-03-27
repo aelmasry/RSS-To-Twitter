@@ -6,7 +6,7 @@
 
 include_once 'parse.php';
 
-$feedUrl = 'http://www.cairoportal.com/News/latestnewsrss'; //the feed you want to micro-syndicate
+$feedUrl = ''; //the feed you want to micro-syndicate
 
 $rss = new lastRSS;
 
@@ -27,10 +27,10 @@ require "vendor/autoload.php";
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-define('CONSUMER_KEY', 'OhmeHEjM5jRiTMWHjvNYl8SB5');
-define('CONSUMER_SECRET', '89tgL0mffoANUl6D84liDerGQk2zadjy6Fa4ko5SercO9IUbwQ');
-$access_token = '2552637594-hqQDvxJk2DP1cwPuAo9sZulkOsuG48XP02kLLUt';
-$access_token_secret = 'yQY2xxvVGZNY0VF9T5z3UTEDP0XVK485TafQ02t82mmJn';
+define('CONSUMER_KEY', '');
+define('CONSUMER_SECRET', '');
+$access_token = '';
+$access_token_secret = '';
 
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token, $access_token_secret);
 $content = $connection->get("account/verify_credentials");
